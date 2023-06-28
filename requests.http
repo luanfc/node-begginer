@@ -1,0 +1,29 @@
+POST http://localhost:4002/products
+content-type: application/json
+
+{
+    "name": "Caderno 196 folhas",
+    "price": 23.20
+}
+
+###
+
+GET http://localhost:4002/products
+
+###
+
+GET http://localhost:4002/products/eb2b13d0-1c93-47a5-ad32-914c88c07d7f
+
+###
+PUT http://localhost:4002/products/2063754c-7eff-457c-87b6-e2070f9dce97
+content-type: application/json
+
+{
+    "name" : "Caneta Bic",
+    "price": 2.00
+}
+
+###
+
+DELETE  http://localhost:4002/products/2063754c-7eff-457c-87b6-e2070f9dce97
+
